@@ -2,8 +2,7 @@
   hosts:  local
   tasks:
     - name: check user exists or not using command module 
-      ansible.builtin.command:
-      cmd:  id expense
+      ansible.builtin.command:   id expense
       register: user
     - name: print the user info
       ansible.builtin.debug:
