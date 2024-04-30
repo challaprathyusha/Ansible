@@ -4,6 +4,7 @@
     - name: check user exists or not using command module 
       ansible.builtin.command:   id expense
       register: user
+      ignore_unreachable: true
     - name: print the user info
       ansible.builtin.debug:
         msg:  "user information:{{user}}"
