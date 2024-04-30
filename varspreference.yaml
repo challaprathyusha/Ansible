@@ -1,9 +1,9 @@
 - name: variable preference
   hosts:  local
   vars:
-    course=devops from playlevelvars
-    trainer=prathyu
-    duration=1 month
+    course: devops from playlevelvars
+    trainer:  prathyu
+    duration: 1 month
   vars_files:
     - vars.yaml
   vars_prompt:
