@@ -1,0 +1,17 @@
+- name: vars from prompt
+  host: localhost
+  vars_prompt:
+    - name: USERNAME
+      prompt: Please enter your username
+      private: true
+    - name: PASSWORD
+      prompt: Please enter your password
+      private:  true
+  tasks:
+    - name: print user details
+      vars: 
+        country:  "India"
+        industry: "IT"
+      ansible.builtin.debug:
+        msg:  "Hi,I am {{USERNAME}} from {{country}}. I am pursuing career in {{industry}}. 
+              My password is {{PASSWORD}}"
