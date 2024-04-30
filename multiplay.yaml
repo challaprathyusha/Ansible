@@ -1,0 +1,12 @@
+- name: play1 in playbook
+  hosts: localhost
+  tasks:
+    - name: printing message in localhost using task1
+      ansible.builtin.debug:
+        mgs:  "Hello,I am learning devops"
+- name: play2 in playbook
+  hosts:  localhost
+  tasks:
+    - name:  printing message in localhost using task2
+      ansible.builtin.debug:
+        mgs:  "Hello,I am learning ansible"
