@@ -10,7 +10,7 @@
       devops: 4
       aws:  5
       docker: 2
-    "is real project":  true #vars as boolean
+    'is real project':  true #vars as boolean
   tasks:
     - name: print different variable datatypes in ansible
       ansible.builtin.debug:
