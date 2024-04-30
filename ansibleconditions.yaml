@@ -1,5 +1,6 @@
 - name: conditions in ansible
   hosts: local
+  become: yes
   tasks:
     - name: command module in ansible
       ansible.builtin.command:  id expense
