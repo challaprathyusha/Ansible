@@ -13,9 +13,9 @@
   tasks:
     - name: print information
       vars:
-        course=devops from tasklevelvars
-        trainer=prathyu
-        duration=1 month
+        course: devops from tasklevelvars
+        trainer:  prathyu
+        duration: 1 month
       ansible.builtin.debug:
         msg:  "Hello,I have been learning {{course}} from {{trainer}} for {{duration}}"
   
