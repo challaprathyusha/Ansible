@@ -4,6 +4,7 @@
     - name: command module in ansible
       ansible.builtin.command:  id expense
       register: user
+      ignore_errors:  true
     - name: display user info
       ansible.builtin.debug:
         msg:  "user info is:{{user}}"
