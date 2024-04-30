@@ -1,6 +1,6 @@
 - name:  vars from commandline
   hosts:  local
-  taks:
+  tasks:
     - name: print welcome mssg
       ansible.builtin.debug:
         msg:  "Hello  {{name}},good {{wishes}}. Welcome to {{course}} learnings."
