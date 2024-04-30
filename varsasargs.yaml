@@ -2,5 +2,7 @@
   hosts:  local
   tasks:
     - name: print welcome mssg
+      vars:
+        course: "terraform"
       ansible.builtin.debug:
         msg:  "Hello  {{name}},good {{wishes}}. Welcome to {{course}} learnings."
