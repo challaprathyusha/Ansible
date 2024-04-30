@@ -1,0 +1,14 @@
+- name: conditions in ansible
+  host: local
+  tasks:
+    - name: command module in ansible
+      ansible.builtin.command:
+        command:  id expense
+        register: user
+    - name: display user info
+      ansible.builtin.debug:
+        msg:  "user info is:{{user}}"
+    - name: condition usage
+      ansible.builtin.command:
+      command:  useradd expense
+      when: user.rc!=0

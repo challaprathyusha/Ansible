@@ -5,7 +5,7 @@
     tools: #vars as list
       - ansible
       - shellscripting
-      - trraform
+      - terraform
     experience: #vars as map or dictionary
       devops: 4
       aws:  5
