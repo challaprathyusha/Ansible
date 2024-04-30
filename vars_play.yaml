@@ -3,7 +3,7 @@
   vars:
     course: "devops"
     trainer: "prathyusha"
-    duration: "4 months"
+    duration: "4 months
   tasks:
     - name: printing info
       ansible.builtin.debug:
