@@ -6,10 +6,6 @@
     duration: 1 month
   vars_files:
     - vars.yaml
-  vars_prompt:
-    - name: course
-      prompt: please enter your coourse name
-      private: no
   tasks:
     - name: print information
       ansible.builtin.debug:
