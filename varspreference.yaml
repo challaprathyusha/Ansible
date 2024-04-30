@@ -1,9 +1,21 @@
 - name: variable preference
   hosts:  local
+  vars:
+    course: devops from playlevelvars
+    trainer:  prathyu
+    duration: 1 month
   vars_files:
     - vars.yaml
+  vars_prompt:
+    - name: course
+      prompt: please enter your coourse name
+      private: no
   tasks:
     - name: print information
+      vars:
+        course: devops from tasklevelvars
+        trainer:  prathyu
+        duration: 1 month
       ansible.builtin.debug:
         msg:  "Hello,I have been learning {{course}} from {{trainer}} for {{duration}}"
   

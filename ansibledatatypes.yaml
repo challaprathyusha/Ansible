@@ -1,0 +1,18 @@
+- name: datatypes in ansible
+  hosts:  local
+  vars:
+    course: devops  #variables as string
+    tools: #vars as list
+      - ansible
+      - shellscripting
+      - trraform
+    experience: #vars as map or dictionary
+      devops: 4
+      aws:  5
+      docker: 2
+    is real project:  true #vars as boolean
+  tasks:
+    - name: print different variable datatypes in ansible
+      ansible.builtin.debug:
+        msg:  "course is:{{course}}, tools are:{{tools}}, experience is:{{experience}}, Is it a real project:{{is real project}}"
+
