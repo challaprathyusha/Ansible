@@ -1,7 +1,7 @@
 - name:  variables declaration at playlevel
   hosts:  localhost
   vars:
-    course: "devops"
+    course: "shell scripting"
     trainer: "prathyusha"
     duration: "4 months"
   tasks:
