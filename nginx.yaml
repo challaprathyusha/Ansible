@@ -1,0 +1,14 @@
+- name: install and run nginx in web
+  hosts: web
+  tasks:
+    - name: installing nginx
+      ansible.builtin.dnf:
+      name: nginx
+      state:  present
+    - name: starting nginx
+      ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: true
+
+    
