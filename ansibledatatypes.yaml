@@ -14,5 +14,5 @@
   tasks:
     - name: print different variable datatypes in ansible
       ansible.builtin.debug:
-        msg:  "course is:{{course}}, tools are:{{tools}}, experience is:{{experience}}, Is it a real project:{{is real project}}"
+        msg:  "course is:{{course}}, tools are:{{tools}}, experience is:{{experience}}, Is it a real project:{{is-real-project}}"
 
