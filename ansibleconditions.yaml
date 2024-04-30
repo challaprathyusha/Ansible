@@ -12,6 +12,4 @@
     - name: condition usage
       ansible.builtin.command:  useradd expense
       when: user.rc!=0
-    - name: command module in ansible
-      ansible.builtin.command:  id expense
-      register: user
+   
