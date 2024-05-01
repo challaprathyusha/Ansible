@@ -32,7 +32,7 @@
   tasks:
     - name:  remove duplicates
       ansible.builtin.debug:
-        msg: "courses to take:{{couse}}"
+        msg: "courses to take:{{course}}"
 
   
       
