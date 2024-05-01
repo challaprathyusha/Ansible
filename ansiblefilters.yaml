@@ -96,7 +96,7 @@
         value:  orange
       - key:  grapes
         value:  red
-tasks:
+  tasks:
     - name: before convert
       ansible.builtin.debug:
         msg:  "before convert:{{list}}"
