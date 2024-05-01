@@ -9,8 +9,8 @@
   hosts:  local 
   tasks:
     - name: convert lower to uppercase
-       vars:
-        greetings: "Hello, Prathyusha"  
+        vars:
+          greetings: "Hello, Prathyusha"  
       ansible.builtin.debug:
         msg:  "{{greetings|upper}}"
       
