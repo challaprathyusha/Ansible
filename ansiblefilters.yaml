@@ -39,7 +39,7 @@
   tasks:
     - name: print min and max numbers
       vars:
-        numbers:  [102 3883 737 919 2992 22]
+        numbers:  [102, 100, 22323, 12133, 23133, 0223]
       ansible.builtin.debug:
         msg:  "min number:{{numbers|min}},max number:{{numbers|max}}"
 
