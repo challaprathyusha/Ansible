@@ -85,7 +85,7 @@
         msg:  "before convert:{{fruits}}"
     - name: after convert
       ansible.builtin.debug:
-        msg:  "after convert:{{fruits|items2dict}}"  
+        msg:  "after convert:{{fruits|items2dict(key_name='fruit',value_name='color')}}"  
 
 
 
