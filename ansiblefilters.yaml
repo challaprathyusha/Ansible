@@ -86,6 +86,24 @@
     - name: after convert
       ansible.builtin.debug:
         msg:  "after convert:{{fruits|items2dict(key_name='fruit',value_name='color')}}"  
+- name: items/list to dictionary
+  hosts:  local
+  vars:
+    list:
+      - key:  apple
+        value:  red
+      - key:  orange
+        value:  orange
+      - key:  grapes
+        value:  red
+tasks:
+    - name: before convert
+      ansible.builtin.debug:
+        msg:  "before convert:{{list}}"
+    - name: after convert
+      ansible.builtin.debug:
+        msg:  "after convert:{{list|items2dict}}"
+              
 
 
 
