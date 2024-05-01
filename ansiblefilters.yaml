@@ -6,10 +6,10 @@
         msg:  "Hello, {{course | default('terraform')}}"
 
 - name: uppercase
-  hosts:  local
-  vars:
-    greetings: "Hello, Prathyusha"   
+  hosts:  local 
   tasks:
+    vars:
+      greetings: "Hello, Prathyusha"  
     - name: convert lower to uppercase
       ansible.builtin.debug:
         msg:  "{{greetings|upper}}"
