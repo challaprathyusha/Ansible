@@ -44,7 +44,7 @@
         msg:  "min number:{{numbers|min}},max number:{{numbers|max}}"
 
 - name: duplicates in numbers
-  host: local
+  hosts: local
   vars:
     numbers:  [73, 23, 89, 23, 56, 73, 34, 45]
   tasks:
