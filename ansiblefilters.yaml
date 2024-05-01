@@ -13,4 +13,17 @@
         greetings: "Hello, Prathyusha"  
       ansible.builtin.debug:
         msg:  "{{greetings|upper}}"
+
+- name: lowercase
+  hosts:  local
+  vars:
+    course: DEVOPS
+    trainer:  PRATHYU
+    duration: 120HRS
+  tasks:
+    - name: upper to lower
+      ansible.builtin.debug:
+        msg:  "Hello,I have been learning {{course|lower}},from trainer {{trainer|lower}} for {{120HRS|lower}}"
+      
+  
       
