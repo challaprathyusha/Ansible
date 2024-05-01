@@ -70,19 +70,22 @@
 - name: items/list to dictionary
   hosts:  local
   vars:
-    list:
-      - ansible
-      - terraform
-      - shellscript
-      - devops
-      - GitHub
+    fruits:
+      - fruit:  apple
+        color:  red
+      - fruit:  orange
+        color:  orange
+      - fruit:  mango
+        color:  yellow
+      - fruit:  banana
+        color:  yellow
   tasks:
     - name: before convert
       ansible.builtin.debug:
-        msg:  "before convert:{{list}}"
-    - name: before convert
+        msg:  "before convert:{{fruits}}"
+    - name: after convert
       ansible.builtin.debug:
-        msg:  "after convert:{{list|items2dict}}"  
+        msg:  "after convert:{{fruits|items2dict}}"  
 
 
 
