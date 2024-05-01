@@ -52,7 +52,7 @@
       ansible.builtin.debug:
         msg:  "min:{{numbers|min}},max:{{numbers|max}}"
 
-- name: dictionary to items
+- name: dictionary to items/list
   hosts:  local
   vars:
     dictionary:
@@ -61,12 +61,29 @@
       age:  30
       country:  India
   tasks:
-    - name: diction to items
+    - name: diction to items/list
       ansible.builtin.debug:
         msg:  "before convert:{{dictionary}}"
     - name: after convert
       ansible.builtin.debug:
         msg:  "after convert:{{dictionary|dict2items}}"
+- name: items/list to dictionary
+  hosts:  local
+  vars:
+    list:
+      - ansible
+      - terraform
+      - shellscript
+      - devops
+      - GitHub
+  tasks:
+    - name: before convert
+      ansible.builtin.debug:
+        msg:  "before convert:{{list}}"
+    - name: before convert
+      ansible.builtin.debug:
+        msg:  "after convert:{{list|items2dict}}"  
+
 
 
   
