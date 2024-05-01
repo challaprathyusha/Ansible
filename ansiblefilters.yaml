@@ -28,7 +28,7 @@
 - name: duplicates
   hosts:  local
   vars:
-    course: ["shellscripting", "ansible", "devops", "devops", "ansible", "terraform", "linux", "linux"]
+    course: ["shellscripting", "ansible", "devops", "devops", "ansible", "terraform", "linux", "linux"|unique]
   tasks:
     - name:  remove duplicates
       ansible.builtin.debug:
