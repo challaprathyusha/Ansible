@@ -4,4 +4,13 @@
     - name: print default value
       ansible.builtin.debug:
         msg:  "Hello, {{course | default('terraform')}}"
+
+- name: uppercase
+  hosts:  local
+  vars:
+    greetings: "Hello, Prathyusha"   
+  tasks:
+    - name: convert lower to uppercase
+      ansible.builtin.debug:
+        msg:  "{{greetings|upper}}"
       
