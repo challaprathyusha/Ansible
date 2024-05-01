@@ -52,5 +52,22 @@
       ansible.builtin.debug:
         msg:  "min:{{numbers|min}},max:{{numbers|max}}"
 
+- name: dictionary to items
+  hosts:  local
+  vars:
+    dictionary:
+      course: devops
+      student:  prathyushs
+      age:  30
+      country:  India
+  tasks:
+    - name: diction to items
+      ansible.builtin.debug:
+        msg:  "before convert:{{dictionary}}"
+    - name: after convert
+      ansible.builtin.debug:
+        msg:  "after convert:{{dictionary|dict2items}}"
+
+
   
       
