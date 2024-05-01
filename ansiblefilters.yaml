@@ -23,7 +23,7 @@
   tasks:
     - name: upper to lower
       ansible.builtin.debug:
-        msg:  "Hello,I have been learning {{course|lower}},from trainer {{trainer|lower}} for {{120HRS|lower}}"
+        msg:  "Hello,I have been learning {{course|lower}},from trainer {{trainer|lower}} for {{duration|lower}}"
       
   
       
