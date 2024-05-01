@@ -38,8 +38,8 @@
   hosts:  local
   tasks:
     - name: print min and max numbers
-        vars:
-          numbers:  [102 3883 737 919 2992 022]
+      vars:
+        numbers:  [102 3883 737 919 2992 022]
       ansible.builtin.debug:
         msg:  "min number:{{numbers|min}},max number:{{numbers|max}}"
   
