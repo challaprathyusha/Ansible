@@ -24,6 +24,15 @@
     - name: upper to lower
       ansible.builtin.debug:
         msg:  "Hello,I have been learning {{course|lower}},from trainer {{trainer|lower}} for {{duration|lower}}"
-      
+
+- name: duplicates
+  hosts:  local
+  vars:
+    course: ["shellscripting" "ansible" "devops" "devops" "ansible" "terraform" "linux" "linux"]
+  tasks:
+    - name:  remove duplicates
+      ansible.builtin.debug:
+        msg: "courses to take:{{couse}}"
+
   
       
