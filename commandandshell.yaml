@@ -13,3 +13,6 @@
     - name: user added or not
       ansible.builtin.command:  id expenses
       register: userinfo
+    - name: print user info
+      ansible.builtin.debug:
+        msg:  "user information:{{userinfo}}"
