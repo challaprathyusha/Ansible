@@ -2,6 +2,6 @@
   hosts:  local
   tasks:
     - name: command module
-      ansible.builtin.command:  "echo "welcome to ansible"|grep welcome"
+      ansible.builtin.command:  echo "welcome to ansible"|grep welcome
     - name: shell module
-      ansible.builtin.shell:  "echo "welcome to ansible"|grep welcome"
+      ansible.builtin.shell:  echo "welcome to ansible"|grep welcome
