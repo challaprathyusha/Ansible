@@ -6,3 +6,8 @@
       register: 
     - name: shell module
       ansible.builtin.shell:  echo "welcome to ansible from shell" &>>/tmp/logfile
+    - name: user module to add user
+      ansible.builtin.user:
+        name: expenses
+    - name: user added or not
+      ansible.builtin.command:  id expenses
