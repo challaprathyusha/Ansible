@@ -12,3 +12,4 @@
         name: expenses
     - name: user added or not
       ansible.builtin.command:  id expenses
+      register: userinfo
