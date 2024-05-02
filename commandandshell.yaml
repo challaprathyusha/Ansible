@@ -2,7 +2,7 @@
   hosts:  local
   tasks:
     - name: command module
-      ansible.builtin.command:  echo "welcome to ansible" &>>/tmp/logfile
+      ansible.builtin.command:  echo "welcome to ansible from command" &>>/tmp/logfile
       register: 
     - name: shell module
-      ansible.builtin.shell:  echo "welcome to ansible" &>>/tmp/logfile
+      ansible.builtin.shell:  echo "welcome to ansible from shell" &>>/tmp/logfile
