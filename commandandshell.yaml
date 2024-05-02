@@ -1,5 +1,6 @@
 - name: command and shell modules 
   hosts:  local
+  become: yes
   tasks:
     - name: command module
       ansible.builtin.command:  echo "welcome to ansible from command" &>>/tmp/logfile
